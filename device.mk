@@ -16,6 +16,9 @@ $(call inherit-product, vendor/xiaomi/violet/firmware/firmware.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
+# MiuiCamera
+$(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
+
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
 
