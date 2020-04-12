@@ -26,6 +26,14 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
 PRODUCT_MANUFACTURER := Xiaomi
 
+# Build with GApps if GAPPS_BUILD is true
+ifeq ($(GAPPS_BUILD),true)
+    WITH_GAPPS := true
+    TARGET_GAPPS_ARCH := arm64
+    IS_PHONE := true
+    TARGET_SHIPS_SEPERATE_GAPPS_BUILD := true
+endif
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="violet" \
     TARGET_DEVICE="violet"
