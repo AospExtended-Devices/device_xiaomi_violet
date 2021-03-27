@@ -1,9 +1,9 @@
 [
   {
-    "repository" : "vendor_xiaomi_violet",
+    "repository" : "dasshubham762/vendor_xiaomi_violet",
     "target_path": "vendor/xiaomi/violet",
     "branch": "eleven",
-    "remote": "pixel-devices-blobs"
+    "remote": "gitlab"
   },
   {
     "repository": "kernel_xiaomi_violet",
